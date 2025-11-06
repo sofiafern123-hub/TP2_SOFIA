@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Tabla con estilo */
+.styled-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.styled-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Animación de botones */
+.animated {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery figure {
+    margin: 15px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.gallery img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* Animación imágenes */
+.animated-img {
+    animation: float 3s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
